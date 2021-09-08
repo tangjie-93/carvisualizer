@@ -199,9 +199,9 @@ function initCar() {
         carModel.getObjectByName('dongco_04').material = new THREE.MeshBasicMaterial({
             map: texture, opacity: 1, transparent: false
         });
-        carModel.getObjectByName('biensoxe').material = new THREE.MeshBasicMaterial({
-            map: texture
-        });
+        //carModel.getObjectByName('biensoxe').material = new THREE.MeshBasicMaterial({
+        //    map: texture
+        //});
         // carParts.body.forEach(part => part.material = bodyMat2); 
         carParts.frontLight.push(
             carModel.getObjectByName('denpha_trai'),
@@ -225,19 +225,19 @@ function initCar() {
         updateMaterials();
 
     });
-    loader.load('./assets/models/gltf/CW.glb', function (gltf) {
-        var CW =
-            gltf.scene.children[0];
-        CW.scale.set(0.3, 0.3, 0.3);
-        CW.position.set(-160, 10, -100);
-        CW.getObjectByName('Text001').material = new THREE.MeshStandardMaterial({
-            color: 0xaa03d, metalness: 1.0, roughness: 0, name: 'orange'
-        });
-        CW.rotation.x = Math.PI / 2;
-        CW.rotation.z = -Math.PI / 3;
-        CW.receiveShadow = true;
-        scene.add(CW);
-    });
+    //loader.load('./assets/models/gltf/CW.glb', function (gltf) {
+    //    var CW =
+    //        gltf.scene.children[0];
+    //    CW.scale.set(0.3, 0.3, 0.3);
+    //    CW.position.set(-160, 10, -100);
+    //    CW.getObjectByName('Text001').material = new THREE.MeshStandardMaterial({
+    //        color: 0xaa03d, metalness: 1.0, roughness: 0, name: 'orange'
+    //    });
+    //    CW.rotation.x = Math.PI / 2;
+    //    CW.rotation.z = -Math.PI / 3;
+    //    CW.receiveShadow = true;
+    //    scene.add(CW);
+    //});
 }
 function initMaterials() {
     materialsLib = {
